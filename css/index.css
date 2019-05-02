@@ -188,6 +188,14 @@ nav a {
 nav a:hover {
   color: #C0C0C0;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-flow: column nowrap;
+  }
+  nav div {
+    flex-flow: row nowrap;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -257,4 +265,5 @@ nav a:hover {
   color: #FFFFFF;
   font-size: 2rem;
   border-radius: 15%;
+  padding: 5px 12.5px;
 }
