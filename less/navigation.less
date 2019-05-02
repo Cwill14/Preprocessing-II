@@ -3,8 +3,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 15px;
+    padding: 20px 0;
     margin-top: 20px;
+    width: 100%;
     border-bottom: 1.5px dashed @silver;
     h1 {
       font-size: 4.25rem;
@@ -16,14 +17,19 @@ nav {
       color: black;
       &:hover {
           color: @silver;
+          // transform: scale(1.25);
       }
     }
+    // div {
+    //   border: 1px dashed blue;
+    // }
+    // // border: 1px dashed red;
     @media @mobile {
       flex-flow: column nowrap;
       div {
         display: flex;
         flex-flow: row nowrap;
-        // border: 1px dashed red;
+        
         margin-top: 10px;
         position: relative;
         top: 15px;
