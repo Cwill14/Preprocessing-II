@@ -193,6 +193,7 @@ nav a:hover {
     flex-flow: column nowrap;
   }
   nav div {
+    display: flex;
     flex-flow: row nowrap;
     margin-top: 10px;
     position: relative;
@@ -220,6 +221,9 @@ nav a:hover {
   margin: 17.5px 0;
 }
 @media (max-width: 500px) {
+  .home header {
+    margin: 10%;
+  }
   .home header #header-bottom {
     margin: 0 10px;
   }
@@ -234,12 +238,16 @@ nav a:hover {
   .home .content-section {
     flex-flow: column nowrap;
     align-items: center;
-    width: 80%;
   }
 }
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 80%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
@@ -247,6 +255,11 @@ nav a:hover {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 80%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;

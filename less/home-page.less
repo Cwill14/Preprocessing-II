@@ -8,6 +8,7 @@
       margin: 17.5px 0;
     }
     @media @mobile {
+      margin: 10%;
       #header-bottom {
         margin: 0 10px;
       }
@@ -23,7 +24,6 @@
     @media @mobile {
       flex-flow: column nowrap;
       align-items: center;
-      width: 80%;
     }
 
    
@@ -31,6 +31,10 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      // border: 1px dashed blue;
+      @media @mobile {
+        width: 80%;
+      }
     }
 
     .img-content {
@@ -39,6 +43,9 @@
 
       img {
         border-radius: 10px;
+      }
+      @media @mobile {
+        width: 80%;
       }
     }
   }
