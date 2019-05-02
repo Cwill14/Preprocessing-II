@@ -174,7 +174,7 @@ nav {
   align-items: center;
   padding: 20px 15px;
   margin-top: 20px;
-  border-bottom: 1.5px dashed gray;
+  border-bottom: 1.5px dashed #C0C0C0;
 }
 nav h1 {
   font-size: 4.25rem;
@@ -186,7 +186,7 @@ nav a {
   color: black;
 }
 nav a:hover {
-  color: lightgray;
+  color: #C0C0C0;
 }
 .footer {
   width: 100%;
@@ -202,6 +202,11 @@ nav a:hover {
 .home header {
   display: flex;
   flex-direction: column;
+  border-bottom: 1.5px dashed #C0C0C0;
+  padding-bottom: 5px;
+}
+.home header h2 {
+  margin: 17.5px 0;
 }
 .home .content-section {
   margin: 30px 0;
