@@ -194,6 +194,9 @@ nav a:hover {
   }
   nav div {
     flex-flow: row nowrap;
+    margin-top: 10px;
+    position: relative;
+    top: 15px;
   }
 }
 .footer {
@@ -216,6 +219,11 @@ nav a:hover {
 .home header h2 {
   margin: 17.5px 0;
 }
+@media (max-width: 500px) {
+  .home header #header-bottom {
+    margin: 0 10px;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -226,6 +234,7 @@ nav a:hover {
   .home .content-section {
     flex-flow: column nowrap;
     align-items: center;
+    width: 80%;
   }
 }
 .home .content-section .text-content {
@@ -277,7 +286,17 @@ nav a:hover {
   background-color: #17A2B8;
   color: #FFFFFF;
   font-size: 2rem;
-  border-radius: 12.5%;
+  border-radius: 20px;
   padding: 15px 5px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }

@@ -7,7 +7,11 @@
     h2 {
       margin: 17.5px 0;
     }
-    
+    @media @mobile {
+      #header-bottom {
+        margin: 0 10px;
+      }
+    }
   }
 
 
@@ -19,6 +23,7 @@
     @media @mobile {
       flex-flow: column nowrap;
       align-items: center;
+      width: 80%;
     }
 
    
@@ -63,6 +68,7 @@
     img {
       border-radius: 10px;
     }
+  
   }
 
   .content-pick {
@@ -75,8 +81,16 @@
       width: 30%;
       margin-bottom: 30px;
       .btn {
-      .btn(@eastern-blue, @white, 2rem, 12.5%, 15px, 5px);
+      .btn(@eastern-blue, @white, 2rem, 20px, 15px, 5px);
       }  
+    }
+    @media @mobile {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      .destination {
+        width: 80%;
+      }
     }
   }
 
